@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="100" viewBox="0 0 200 100">
+  <style>
+    .monogram { font: bold 40px sans-serif; fill: #007BFF; }
+    .notes { font: normal 30px sans-serif; fill: #333; }
+  </style>
+  <text x="10" y="40" class="monogram">AV</text>
+  <text x="60" y="40" class="notes">Notes</text>
+</svg>
