@@ -1,0 +1,356 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2822
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 /* Reset and Base Styles */\
+* \{\
+    margin: 0;\
+    padding: 0;\
+    box-sizing: border-box;\
+\}\
+\
+body \{\
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;\
+    line-height: 1.6;\
+    color: #333;\
+    background-color: #fff;\
+\}\
+\
+.container \{\
+    max-width: 1200px;\
+    margin: 0 auto;\
+    padding: 0 20px;\
+\}\
+\
+/* Navigation */\
+.navbar \{\
+    background: #fff;\
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);\
+    position: sticky;\
+    top: 0;\
+    z-index: 100;\
+\}\
+\
+.nav-container \{\
+    max-width: 1200px;\
+    margin: 0 auto;\
+    padding: 0 20px;\
+    display: flex;\
+    justify-content: space-between;\
+    align-items: center;\
+    height: 70px;\
+\}\
+\
+.nav-logo a \{\
+    font-size: 24px;\
+    font-weight: bold;\
+    color: #2c3e50;\
+    text-decoration: none;\
+\}\
+\
+.nav-menu \{\
+    display: flex;\
+    list-style: none;\
+    gap: 30px;\
+\}\
+\
+.nav-menu a \{\
+    text-decoration: none;\
+    color: #555;\
+    font-weight: 500;\
+    transition: color 0.3s ease;\
+\}\
+\
+.nav-menu a:hover \{\
+    color: #3498db;\
+\}\
+\
+/* Hero Section */\
+.hero \{\
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);\
+    color: white;\
+    padding: 80px 0;\
+    text-align: center;\
+\}\
+\
+.hero-content h1 \{\
+    font-size: 3rem;\
+    font-weight: 300;\
+    margin-bottom: 20px;\
+\}\
+\
+.hero-content p \{\
+    font-size: 1.2rem;\
+    max-width: 600px;\
+    margin: 0 auto;\
+    opacity: 0.9;\
+\}\
+\
+/* Featured Post */\
+.featured-post \{\
+    padding: 60px 0;\
+    background: #f8f9fa;\
+\}\
+\
+.hero-post \{\
+    display: grid;\
+    grid-template-columns: 1fr 1fr;\
+    gap: 40px;\
+    align-items: center;\
+    max-width: 1200px;\
+    margin: 0 auto;\
+\}\
+\
+.post-image \{\
+    position: relative;\
+    overflow: hidden;\
+    border-radius: 12px;\
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);\
+\}\
+\
+.post-image img \{\
+    width: 100%;\
+    height: 300px;\
+    object-fit: cover;\
+    transition: transform 0.3s ease;\
+\}\
+\
+.post-image:hover img \{\
+    transform: scale(1.05);\
+\}\
+\
+.post-category \{\
+    position: absolute;\
+    top: 15px;\
+    left: 15px;\
+    background: #3498db;\
+    color: white;\
+    padding: 5px 12px;\
+    border-radius: 20px;\
+    font-size: 0.85rem;\
+    font-weight: 500;\
+\}\
+\
+.post-content h2 \{\
+    font-size: 2rem;\
+    margin-bottom: 15px;\
+    line-height: 1.3;\
+\}\
+\
+.post-content h2 a \{\
+    text-decoration: none;\
+    color: #2c3e50;\
+    transition: color 0.3s ease;\
+\}\
+\
+.post-content h2 a:hover \{\
+    color: #3498db;\
+\}\
+\
+.post-excerpt \{\
+    font-size: 1.1rem;\
+    color: #666;\
+    margin-bottom: 20px;\
+    line-height: 1.7;\
+\}\
+\
+.post-meta \{\
+    display: flex;\
+    gap: 20px;\
+    font-size: 0.9rem;\
+    color: #888;\
+\}\
+\
+/* Secondary Posts */\
+.secondary-posts \{\
+    padding: 60px 0;\
+\}\
+\
+.posts-grid \{\
+    display: grid;\
+    gap: 30px;\
+\}\
+\
+.secondary-posts .posts-grid \{\
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));\
+\}\
+\
+.post-card \{\
+    background: white;\
+    border-radius: 12px;\
+    overflow: hidden;\
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);\
+    transition: transform 0.3s ease, box-shadow 0.3s ease;\
+\}\
+\
+.post-card:hover \{\
+    transform: translateY(-5px);\
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15);\
+\}\
+\
+.post-card .post-image img \{\
+    width: 100%;\
+    height: 200px;\
+    object-fit: cover;\
+\}\
+\
+.post-card .post-content \{\
+    padding: 20px;\
+\}\
+\
+.post-card h3 \{\
+    margin-bottom: 10px;\
+    font-size: 1.3rem;\
+    line-height: 1.4;\
+\}\
+\
+.post-card h3 a \{\
+    text-decoration: none;\
+    color: #2c3e50;\
+    transition: color 0.3s ease;\
+\}\
+\
+.post-card h3 a:hover \{\
+    color: #3498db;\
+\}\
+\
+.post-card p \{\
+    color: #666;\
+    margin-bottom: 15px;\
+\}\
+\
+/* Recent Posts */\
+.recent-posts \{\
+    padding: 60px 0;\
+    background: #f8f9fa;\
+\}\
+\
+.section-title \{\
+    text-align: center;\
+    font-size: 2.2rem;\
+    margin-bottom: 50px;\
+    color: #2c3e50;\
+    font-weight: 300;\
+\}\
+\
+.recent-posts .posts-grid \{\
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));\
+\}\
+\
+.recent .post-card .post-image img \{\
+    height: 180px;\
+\}\
+\
+.recent .post-card .post-content \{\
+    padding: 15px;\
+\}\
+\
+.recent .post-card h3 \{\
+    font-size: 1.1rem;\
+    margin-bottom: 10px;\
+\}\
+\
+.recent .post-card .post-meta \{\
+    justify-content: flex-start;\
+\}\
+\
+/* Footer */\
+.footer \{\
+    background: #2c3e50;\
+    color: white;\
+    padding: 40px 0;\
+    text-align: center;\
+\}\
+\
+.footer-links \{\
+    margin-top: 20px;\
+    display: flex;\
+    justify-content: center;\
+    gap: 30px;\
+\}\
+\
+.footer-links a \{\
+    color: #bdc3c7;\
+    text-decoration: none;\
+    transition: color 0.3s ease;\
+\}\
+\
+.footer-links a:hover \{\
+    color: white;\
+\}\
+\
+/* Responsive Design */\
+@media (max-width: 768px) \{\
+    .nav-menu \{\
+        flex-direction: column;\
+        position: absolute;\
+        top: 70px;\
+        left: 0;\
+        width: 100%;\
+        background: white;\
+        box-shadow: 0 2px 10px rgba(0,0,0,0.1);\
+        display: none;\
+    \}\
+\
+    .hero-content h1 \{\
+        font-size: 2rem;\
+    \}\
+\
+    .hero-post \{\
+        grid-template-columns: 1fr;\
+        text-align: center;\
+    \}\
+\
+    .secondary-posts .posts-grid \{\
+        grid-template-columns: 1fr;\
+    \}\
+\
+    .recent-posts .posts-grid \{\
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));\
+    \}\
+\
+    .post-content h2 \{\
+        font-size: 1.5rem;\
+    \}\
+\
+    .footer-links \{\
+        flex-direction: column;\
+        gap: 15px;\
+    \}\
+\}\
+\
+/* Category Colors */\
+.post-category \{\
+    font-weight: 600;\
+\}\
+\
+.post-card[data-category="travel"] .post-category \{\
+    background: #e74c3c;\
+\}\
+\
+.post-card[data-category="books"] .post-category \{\
+    background: #f39c12;\
+\}\
+\
+.post-card[data-category="food"] .post-category \{\
+    background: #27ae60;\
+\}\
+\
+.post-card[data-category="music"] .post-category \{\
+    background: #9b59b6;\
+\}\
+\
+.post-card[data-category="career"] .post-category \{\
+    background: #34495e;\
+\}\
+\
+.post-card[data-category="family"] .post-category \{\
+    background: #e67e22;\
+\}\
+\
+.post-card[data-category="podcasts"] .post-category \{\
+    background: #16a085;\
+\}}
