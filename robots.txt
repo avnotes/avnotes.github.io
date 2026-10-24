@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://avnotes.github.io/sitemap.xml
